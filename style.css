@@ -487,3 +487,193 @@ footer a:hover {
     }
 
 }
+
+/* =========================================
+   PRIVATE APPLICATION PAGE
+   ========================================= */
+
+.application-page {
+    max-width: 1400px;
+    margin: auto;
+}
+
+
+/* INTRO */
+
+.application-intro {
+    min-height: 75vh;
+    padding: 15vh 6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.application-intro h1 {
+    font-size: clamp(55px, 9vw, 130px);
+    line-height: 0.9;
+    letter-spacing: -7px;
+    max-width: 1100px;
+    margin-bottom: 45px;
+}
+
+.application-intro h1 span {
+    color: #888;
+}
+
+.application-description {
+    max-width: 600px;
+    color: #999;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+
+/* VIDEO */
+
+.application-video-section {
+    padding: 8vh 6% 15vh;
+    border-top: 1px solid #222;
+}
+
+.application-label {
+    display: flex;
+    justify-content: space-between;
+    color: #666;
+    font-size: 11px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.application-video-wrapper {
+    width: 100%;
+    max-width: 950px;
+    margin: auto;
+}
+
+.application-video-wrapper video {
+    width: 100%;
+    display: block;
+    background: #111;
+    max-height: 80vh;
+    object-fit: contain;
+}
+
+
+/* IMAGES */
+
+.application-images {
+    padding: 8vh 6% 15vh;
+    border-top: 1px solid #222;
+}
+
+.application-image-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.application-image {
+    overflow: hidden;
+    background: #111;
+}
+
+.application-image img {
+    width: 100%;
+    height: 650px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.application-image:hover img {
+    transform: scale(1.03);
+}
+
+
+/* CLOSING */
+
+.application-closing {
+    padding: 15vh 6%;
+    border-top: 1px solid #222;
+}
+
+.application-closing h2 {
+    font-size: clamp(50px, 8vw, 110px);
+    line-height: 0.9;
+    letter-spacing: -6px;
+    max-width: 1000px;
+    margin-bottom: 40px;
+}
+
+.application-closing h2 span {
+    color: #888;
+}
+
+.application-closing > p:last-child {
+    color: #888;
+    max-width: 550px;
+    font-size: 18px;
+}
+
+
+/* APPLICATION FOOTER */
+
+.application-footer {
+    border-top: 1px solid #222;
+    padding: 40px 6%;
+    display: flex;
+    justify-content: space-between;
+    color: #666;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .application-intro {
+        min-height: 70vh;
+        padding: 12vh 5%;
+    }
+
+    .application-intro h1 {
+        font-size: 55px;
+        letter-spacing: -3px;
+    }
+
+    .application-description {
+        font-size: 17px;
+    }
+
+    .application-video-section,
+    .application-images,
+    .application-closing {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .application-image-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .application-image img {
+        height: auto;
+        max-height: 600px;
+    }
+
+    .application-closing h2 {
+        font-size: 55px;
+        letter-spacing: -3px;
+    }
+
+    .application-footer {
+        padding: 30px 5%;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+}
