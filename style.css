@@ -677,3 +677,241 @@ footer a:hover {
     }
 
 }
+
+/* =========================================
+   INSENSE APPLICATION PAGE
+   ========================================= */
+
+.insense-page {
+    max-width: 1400px;
+    margin: auto;
+}
+
+
+/* INTRO */
+
+.insense-intro {
+    min-height: 80vh;
+    padding: 15vh 6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.insense-intro h1 {
+    font-size: clamp(60px, 10vw, 140px);
+    line-height: 0.86;
+    letter-spacing: -8px;
+    max-width: 1100px;
+    margin-bottom: 50px;
+}
+
+.insense-intro h1 span {
+    color: #888;
+}
+
+.insense-intro-text {
+    max-width: 650px;
+    color: #999;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+
+/* VIDEO */
+
+.insense-video-section {
+    padding: 8vh 6% 15vh;
+    border-top: 1px solid #222;
+}
+
+.insense-label {
+    display: flex;
+    justify-content: space-between;
+    color: #666;
+    font-size: 11px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.insense-video-wrapper {
+    width: 100%;
+    max-width: 950px;
+    margin: auto;
+}
+
+.insense-video-wrapper video {
+    width: 100%;
+    display: block;
+    background: #111;
+    max-height: 80vh;
+    object-fit: contain;
+}
+
+
+/* MESSAGE */
+
+.insense-message {
+    padding: 15vh 6%;
+    border-top: 1px solid #222;
+}
+
+.insense-message h2 {
+    font-size: clamp(50px, 8vw, 110px);
+    line-height: 0.9;
+    letter-spacing: -6px;
+    max-width: 1000px;
+    margin-bottom: 50px;
+}
+
+.insense-message > p:not(.eyebrow) {
+    max-width: 650px;
+    color: #999;
+    font-size: 19px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+
+/* CONTACT */
+
+.insense-contact {
+    padding: 15vh 6%;
+    border-top: 1px solid #222;
+}
+
+.insense-contact h2 {
+    font-size: clamp(55px, 9vw, 120px);
+    line-height: 0.88;
+    letter-spacing: -7px;
+    margin-bottom: 80px;
+}
+
+.insense-contact h2 span {
+    color: #888;
+}
+
+
+/* CONTACT LINKS */
+
+.insense-contact-links {
+    max-width: 1000px;
+}
+
+.insense-contact-link {
+    display: grid;
+    grid-template-columns: 150px 1fr 40px;
+    align-items: center;
+    gap: 30px;
+
+    padding: 30px 0;
+
+    border-top: 1px solid #222;
+
+    transition: 0.3s;
+}
+
+.insense-contact-link:last-child {
+    border-bottom: 1px solid #222;
+}
+
+.insense-contact-link > span:first-child {
+    color: #666;
+    font-size: 11px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.insense-contact-link strong {
+    font-size: clamp(18px, 3vw, 28px);
+    font-weight: 500;
+}
+
+.insense-contact-link .arrow {
+    color: #777;
+    font-size: 25px;
+    text-align: right;
+}
+
+.insense-contact-link:hover {
+    padding-left: 15px;
+}
+
+.insense-contact-link:hover strong {
+    color: #ccc;
+}
+
+
+/* FOOTER */
+
+.insense-footer {
+    border-top: 1px solid #222;
+    padding: 40px 6%;
+
+    display: flex;
+    justify-content: space-between;
+
+    color: #666;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .insense-intro {
+        min-height: 70vh;
+        padding: 12vh 5%;
+    }
+
+    .insense-intro h1 {
+        font-size: 58px;
+        letter-spacing: -4px;
+    }
+
+    .insense-intro-text {
+        font-size: 17px;
+    }
+
+    .insense-video-section,
+    .insense-message,
+    .insense-contact {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .insense-message h2 {
+        font-size: 55px;
+        letter-spacing: -3px;
+    }
+
+    .insense-contact h2 {
+        font-size: 58px;
+        letter-spacing: -4px;
+    }
+
+    .insense-contact-link {
+        grid-template-columns: 1fr 30px;
+        gap: 10px;
+    }
+
+    .insense-contact-link > span:first-child {
+        grid-column: 1 / -1;
+        margin-bottom: 5px;
+    }
+
+    .insense-contact-link strong {
+        font-size: 17px;
+        word-break: break-word;
+    }
+
+    .insense-footer {
+        padding: 30px 5%;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+}
